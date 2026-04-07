@@ -10,7 +10,7 @@ from groq import Groq
 # Configura a página do Streamlit com título, ícone, layout e estado inicial da sidebar
 st.set_page_config(
     page_title="Agente IA",
-    page_icon="🧌",
+    page_icon="🦧",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -30,4 +30,40 @@ REGRAS DE OPERAÇÃO:
 """
 with st.sidebar:
 
-    st.title("🧌 Agente IA")
+    st.title("🦧 Agente IA")
+    st.markdown("Um assistente de IA focado em programação Python para ajudar iniciantes.")
+
+    groq_api_key = st.text_input(
+        "Insira sua API Key Groq",
+        type="password",
+        help="Obtenha sua chave em: https://console.groq.com/keys"
+    )
+
+    st.markdown("---")
+    st.markdown("Desenvolvido para auxiliar em suas dúvidas de programação com Linguagem Python.")
+
+st.title("🦧 Agente IA")
+
+st.title("🐍 Assistente Pessoal de Programação Python")
+
+st.caption("Faça sua pergunta sobre Linguagem Python.")
+
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+for message in st.session_state.messages:
+    with    st.chat_message(message["role"]):
+            st.markdown(message["content"])
+
+client = None
+
+if groq_api_key:
+    try:
+        client = Groq(api_key = groq_api_key)
+    
+    except Exception as e:
+        st.sidebar.error(f"Erro ao iniciar o cliente Groq: {e}!")
+        st.stop()
+
+elif st.session_state.messages:
+    st.warning("Por favorm insira a chave da sua API Groq na barra lateral para continuar.")
