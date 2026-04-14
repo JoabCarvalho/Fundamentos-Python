@@ -8,9 +8,9 @@ def minha_funcao():
     # Variável Local
     nome = "João"
     print(f"\nDentro da função:{nome}.")
-    print(f"\nAcessando a variável global de dentro da função: {saudacao}.")
+    print(f"\nAcessando a variável global de dentro da função: {saudacao}, {nome}.")
 
 minha_funcao()
 
 print(f"\nFora da função: {nome}.")
-print(f"\nAcessando a variável global de fora da função: {saudacao}.")
+print(f"\nAcessando a variável global de fora da função: {saudacao}, {nome}.")

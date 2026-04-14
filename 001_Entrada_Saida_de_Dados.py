@@ -12,6 +12,8 @@ if media >= 6:
 else:
     print("Infelizmente você não passou, estude mais para a próxima prova!")
 
+print("\n")
+
 
 # Declaração de variáveis e atribuição de valores
 
@@ -23,4 +25,13 @@ estudante = True        # Boolean
 print(f"Nome: {nome}")
 print(f"Idade: {idade}")
 print(f"Altura: {altura}")
-print(f"É estudante: {estudante}")
+
+if estudante == True:
+    print("É estudante: Sim")
+else:
+    print("É estudante: Não")
+
+type(nome)
+type(idade)
+type(altura)
+type(estudante)
