@@ -17,12 +17,12 @@ print(f"Meu filho tem {idade} anos.")
 #----------------------------------
 import math
 
-raizDe = input("Digite um número para obter a raíz quadrada dele: ")
+raizQuadradaDe = input("Digite um número para obter a raíz quadrada dele: ")
 try:
     # Converte a entrada para float antes de calcular a raiz quadrada
-    numero_flutuante = float(raizDe)
+    numero_flutuante = float(raizQuadradaDe)
     resultado = math.sqrt(numero_flutuante)
-    print(f"A raiz quadrada de {raizDe} é: {resultado}")
+    print(f"A raiz quadrada de {raizQuadradaDe} é: {resultado}")
 except ValueError:
-    print(f"Erro: '{raizDe}' não é um número válido. Por favor, digite um número.")
+    print(f"Erro: '{raizQuadradaDe}' não é um número válido. Por favor, digite um número.")
 #----------------------------------

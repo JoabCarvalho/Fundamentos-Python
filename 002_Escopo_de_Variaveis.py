@@ -1,8 +1,6 @@
 # Variável Global
-
 saudacao = "Olá, sejam bem-vindo ao curso de Python!"
 nome = "Maria"
-
 
 def minha_funcao():
     # Variável Local
