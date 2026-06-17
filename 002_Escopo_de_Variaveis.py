@@ -5,7 +5,7 @@ nome = "Maria"
 def minha_funcao():
     # Variável Local
     nome = "João"
-    print(f"\nDentro da função:{nome}.")
+    print(f"\nDentro da função: {nome}.")
     print(f"\nAcessando a variável global de dentro da função: {saudacao}, {nome}.")
 
 minha_funcao()
