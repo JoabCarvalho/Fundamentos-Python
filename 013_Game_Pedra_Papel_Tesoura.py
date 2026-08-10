@@ -16,7 +16,7 @@ while True:
 
     if jogador1.lower() not in ['1', '2', '3', 'pedra', 'papel', 'tesoura']:
         print('------------------------------------------------------------')
-        print('Opção inválida Jogador 1! Escolha direito, sua vitória depende disso!!!')
+        print('Opção inválida Jogador 1!\nEscolha direito, sua vitória depende disso!!!')
         print('Por favor, escolha entre 1, 2 ou 3.')
         continue
     else:
@@ -28,7 +28,7 @@ while True:
     jogador2 = input('Faça sua escolha Jogador 2: ')
     if jogador2.lower() not in ['1', '2', '3', 'pedra', 'papel', 'tesoura']:
         print('------------------------------------------------------------')
-        print('Opção inválida Jogador 2! Escolha direito, sua vitória depende disso!!!')
+        print('Opção inválida Jogador 2!\nEscolha direito, sua vitória depende disso!!!')
         print('Por favor, escolha entre 1, 2 ou 3.')
         continue
     else:
@@ -37,25 +37,19 @@ while True:
 
 if jogador1.lower() in ['1', 'pedra']:
     jogador1 = 'Pedra'
-
 elif jogador1.lower() in ['2', 'papel']:
     jogador1 = 'Papel'
-
 elif jogador1.lower() in ['3', 'tesoura']:
     jogador1 = 'Tesoura'
 
 
 if jogador2.lower() in ['1', 'pedra']:
     jogador2 = 'Pedra'
-
 elif jogador2.lower() in ['2', 'papel']:
     jogador2 = 'Papel'
-
 elif jogador2.lower() in ['3', 'tesoura']:
     jogador2 = 'Tesoura'
 
-
-vencedor = None
 
 if jogador1 == jogador2:
     vencedor = 'Empate'
