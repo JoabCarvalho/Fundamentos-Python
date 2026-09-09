@@ -55,6 +55,7 @@ if jogador1 == jogador2:
     vencedor = 'Empate'
     print('------------------------------------------------------------')
     print(f'O jogo deu {vencedor}!\nTentem novamente se não gostaram do resultado!')
+    print(f'Ambos escolheram "{jogador1}"!')
     print('------------------------------------------------------------')
 else:
     # Determinar o vencedor com base nas regras do jogo
@@ -63,10 +64,12 @@ else:
        (jogador1 == 'Tesoura' and jogador2 == 'Papel'):
         vencedor = 'Jogador 1'
         print('------------------------------------------------------------')
+        print(f'Jogador 1 escolheu "{jogador1}" e o Jogador 2 escolheu "{jogador2}"')
         print(f'O vencedor é o {vencedor}!\nParabéns!')
         print('------------------------------------------------------------')
     else:
         vencedor = 'Jogador 2'
         print('------------------------------------------------------------')
+        print(f'Jogador 2 escolheu "{jogador2}" e o Jogador 1 escolheu "{jogador1}"')
         print(f'O vencedor é o {vencedor}!\nParabéns!')
         print('------------------------------------------------------------')
