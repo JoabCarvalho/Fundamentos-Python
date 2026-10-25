@@ -14,7 +14,7 @@ while True:
     print('Escolha uma das opções abaixo: \n 1 - Pedra \n 2 - Papel \n 3 - Tesoura \n')
     jogador1 = input('Faça sua escolha Jogador 1: ')
 
-    if jogador1.lower() not in ['1', '2', '3', 'pedra', 'papel', 'tesoura']:
+    if jogador1.lower().strip() not in ['1', '2', '3', 'pedra', 'papel', 'tesoura']:
         print('------------------------------------------------------------')
         print('Opção inválida Jogador 1!\nEscolha direito, sua vitória depende disso!!!')
         print('Por favor, escolha entre 1, 2 ou 3.')
@@ -26,7 +26,7 @@ while True:
 while True:
     print('------------------------------------------------------------')
     jogador2 = input('Faça sua escolha Jogador 2: ')
-    if jogador2.lower() not in ['1', '2', '3', 'pedra', 'papel', 'tesoura']:
+    if jogador2.lower().strip() not in ['1', '2', '3', 'pedra', 'papel', 'tesoura']:
         print('------------------------------------------------------------')
         print('Opção inválida Jogador 2!\nEscolha direito, sua vitória depende disso!!!')
         print('Por favor, escolha entre 1, 2 ou 3.')
@@ -35,19 +35,19 @@ while True:
         break
 
 
-if jogador1.lower() in ['1', 'pedra']:
+if jogador1.lower().strip() in ['1', 'pedra']:
     jogador1 = 'Pedra'
-elif jogador1.lower() in ['2', 'papel']:
+elif jogador1.lower().strip() in ['2', 'papel']:
     jogador1 = 'Papel'
-elif jogador1.lower() in ['3', 'tesoura']:
+elif jogador1.lower().strip() in ['3', 'tesoura']:
     jogador1 = 'Tesoura'
 
 
-if jogador2.lower() in ['1', 'pedra']:
+if jogador2.lower().strip() in ['1', 'pedra']:
     jogador2 = 'Pedra'
-elif jogador2.lower() in ['2', 'papel']:
+elif jogador2.lower().strip() in ['2', 'papel']:
     jogador2 = 'Papel'
-elif jogador2.lower() in ['3', 'tesoura']:
+elif jogador2.lower().strip() in ['3', 'tesoura']:
     jogador2 = 'Tesoura'
 
 
