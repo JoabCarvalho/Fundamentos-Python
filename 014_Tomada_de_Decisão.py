@@ -103,3 +103,16 @@ for produto, preco in produtos.items():
         print(f"> {produto} é caro: R$ {preco}")
     else:
         print(f"> {produto} é barato: R$ {preco}")
+
+print("\n")
+
+quadrados = [x**2 for x in range(11)]
+print(f"Quadrados de 0 a 10: {quadrados}.")
+print(type(quadrados))
+
+print("\n")
+
+pares = [x for x in range(21) if x % 2 == 0]
+print(f"Pares de 0 até 20: {pares}.")
+
+print("\n")
