@@ -23,14 +23,18 @@ soma = somaNumeros(a, b)
 print(f"A soma de {entrada_a} e {entrada_b} é {soma}.")
 
 print("\n")
-
 # Define uma função com um parâmetro opcional chamado mensagem.
 def saudacaoPersonalizada(nome, mensagem = 'Olá'):
     print(f'{mensagem}, {nome}!')
 
 # Como mensagem não foi informada, usa o valor padrão "Olá".
 saudacaoPersonalizada('João')
+
 print("\n")
 # Neste caso, a mensagem "Bem-vinda" é informada explicitamente.
 saudacaoPersonalizada('Maria', 'Bem-vinda')
 
+print("\n")
+pessoa = input("\nDigite o nome de uma pessoa: ")
+# Neste caso, a mensagem "Olá" é usada como valor padrão.
+saudacaoPersonalizada(pessoa)
