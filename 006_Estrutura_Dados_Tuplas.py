@@ -18,12 +18,12 @@ print("\n")
 # Modificando valor na Tupla (isso não é possível, pois as tuplas são imutáveis)
 # dias_semana[0] = "Domingo-Feira"
 
-deletar_tupla_dias_semana = input("Deseja deletar a Tupla de Dias da Semana? (Sim ou Não): ")
+deletar_tupla_dias_semana = input("Deseja deletar a Tupla de Dias da Semana?\n(Sim ou Não): ")
 while deletar_tupla_dias_semana.lower() not in ["s","sim","y","yes","n","não","no"]:
     deletar_tupla_dias_semana = input("Digite Sim ou Não: ")
 
 if deletar_tupla_dias_semana.lower() in ["s","sim","y","yes"]:
-    confirmacao = input("Tem certeza que deseja prosseguir em deletar a Tupla? (Sim ou Não): ")
+    confirmacao = input("Tem certeza que deseja prosseguir em deletar a Tupla?\n(Sim ou Não): ")
     while confirmacao.lower() not in ["s","sim","y","yes","n","não","no"]:
         confirmacao = input("Digite Sim ou Não: ")
 

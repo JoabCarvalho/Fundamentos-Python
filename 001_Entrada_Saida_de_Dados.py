@@ -14,7 +14,6 @@ else:
 
 print("\n")
 
-
 # Declaração de variáveis e atribuição de valores
 
 nome = "João"           # String

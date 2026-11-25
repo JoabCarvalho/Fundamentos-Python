@@ -63,4 +63,3 @@ if deletar_lista_frutas.lower() in ["s", "sim", "y", "yes"]:
     print("Lista de frutas deletada.")
 if deletar_lista_frutas.lower() in ["n", "não", "no"]:
     print("Lista de frutas mantida.")
-
