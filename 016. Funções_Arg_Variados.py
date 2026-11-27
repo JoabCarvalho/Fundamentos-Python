@@ -3,7 +3,7 @@ def somarNumeros(*args):
 
     for i in args:
         total += i
-    return str(total).replace(".", ",")
+    return total
 
 
 while True:
@@ -27,4 +27,5 @@ for i in range(quantidade):
         except ValueError:
             print("Digite um número válido.")
 
-print(f"A soma dos números é: {somarNumeros(*numeros)}")
+resultado = somarNumeros(*numeros)
+print(f"A soma dos números é: {resultado}")
